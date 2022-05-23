@@ -1,0 +1,116 @@
+<mxfile host="65bd71144e">
+    <diagram id="AlOHhorMrEOj3m-qH4Sn" name="第 1 页">
+        <mxGraphModel dx="1500" dy="855" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="学籍信息管理系统设计与实现" style="swimlane;startSize=20;horizontal=1;childLayout=treeLayout;horizontalTree=0;resizable=0;containerType=tree;" parent="1" vertex="1">
+                    <mxGeometry x="160" y="40" width="1232" height="370" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="学籍信息管理系统" style="whiteSpace=wrap;html=1;" parent="2" vertex="1">
+                    <mxGeometry x="461" y="40" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="账户" style="whiteSpace=wrap;html=1;" parent="2" vertex="1">
+                    <mxGeometry x="160" y="130" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;rounded=0;" parent="2" source="3" target="4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="学籍信息" style="whiteSpace=wrap;html=1;" parent="2" vertex="1">
+                    <mxGeometry x="762" y="130" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;rounded=0;" parent="2" source="3" target="6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;rounded=0;" parent="2" source="4" target="9" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-7370.5" y="420" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="9" value="权限管理" style="whiteSpace=wrap;html=1;" parent="2" vertex="1">
+                    <mxGeometry x="20" y="220" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;rounded=0;" parent="2" source="4" target="11" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-7440.5" y="510" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="11" value="账户注册" style="whiteSpace=wrap;html=1;" parent="2" vertex="1">
+                    <mxGeometry x="160" y="220" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;rounded=0;" parent="2" source="4" target="13" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-7300.5" y="510" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="13" value="账户注销" style="whiteSpace=wrap;html=1;" parent="2" vertex="1">
+                    <mxGeometry x="300" y="220" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;rounded=0;" parent="2" source="6" target="31" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-4715.5" y="120" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="31" value="学籍信息" style="whiteSpace=wrap;html=1;" parent="2" vertex="1">
+                    <mxGeometry x="552" y="220" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;rounded=0;" parent="2" source="6" target="47" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-613.5" y="120" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="47" value="学生信息" style="whiteSpace=wrap;html=1;" parent="2" vertex="1">
+                    <mxGeometry x="972" y="220" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;rounded=0;" edge="1" target="49" source="47" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="72.5" y="210" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="49" value="修改学生信息" style="whiteSpace=wrap;html=1;" vertex="1" parent="2">
+                    <mxGeometry x="832" y="310" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;rounded=0;" edge="1" target="51" source="47" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="279" y="300" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="51" value="查找学生信息" style="whiteSpace=wrap;html=1;" vertex="1" parent="2">
+                    <mxGeometry x="972" y="310" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;rounded=0;" edge="1" target="53" source="47" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="331.5" y="300" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="53" value="录入学生信息" style="whiteSpace=wrap;html=1;" vertex="1" parent="2">
+                    <mxGeometry x="1112" y="310" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;rounded=0;" edge="1" target="55" source="31" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="37.5" y="210" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="55" value="录入学籍信息" style="whiteSpace=wrap;html=1;" vertex="1" parent="2">
+                    <mxGeometry x="412" y="310" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;rounded=0;" edge="1" target="57" source="31" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-95.5" y="300" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="57" value="查找学籍信息" style="whiteSpace=wrap;html=1;" vertex="1" parent="2">
+                    <mxGeometry x="552" y="310" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="58" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;html=1;rounded=0;" edge="1" target="59" source="31" parent="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="310.5" y="300" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="59" value="删除学籍信息" style="whiteSpace=wrap;html=1;" vertex="1" parent="2">
+                    <mxGeometry x="692" y="310" width="100" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
