@@ -36,6 +36,10 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
+# Screenshot
+
+![API](images/API.png)
+![Module](images/Module.png)
 # License
 
 [MIT License](./LICENSE)
