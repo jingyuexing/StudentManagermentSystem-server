@@ -76,6 +76,6 @@ export class StudentController {
     })
     @Delete("")
     removeStudent(){
-        
+        return this.studentService.removeStudent();
     }
 }
