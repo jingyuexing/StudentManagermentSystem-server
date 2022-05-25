@@ -8,9 +8,10 @@ import { AccountModule } from './account/account.module';
 
 @Module({
   imports: [
-    StudentModule, 
-    TeacherModule, 
-    MonitorModule, AccountModule,
+    StudentModule,
+    TeacherModule,
+    MonitorModule,
+    AccountModule,
   ],
   providers: [],
   controllers: [],

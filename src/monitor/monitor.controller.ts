@@ -1,5 +1,5 @@
 import { Monitor } from '@libs/db/modules/monitor.module';
-import { Body, Controller, Get, Post, Query } from '@nestjs/common';
+import { Body, Controller, Get, Logger, Post, Query } from '@nestjs/common';
 import { ApiOperation, ApiQuery, ApiTags } from '@nestjs/swagger';
 
 @ApiTags("前端监控日志提交接口")
@@ -15,6 +15,7 @@ export class MonitorController {
     })
     @Get("")
     updateLogger(@Query("data") loggerData:string){
+        Logger.log(loggerData,"front end logger")
     }
 
     @ApiOperation({
@@ -22,5 +23,6 @@ export class MonitorController {
     })
     @Post('')
     submitLogger(@Body() logger:Monitor){
+        Logger.log(logger,"submit logger")
     }
 }

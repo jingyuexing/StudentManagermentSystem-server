@@ -1,5 +1,5 @@
 import { Account } from '@libs/db/modules/Account.module';
-import { Body, Controller, Delete, Post, Put, Query } from '@nestjs/common';
+import { Body, Controller, Delete, Logger, Post, Put, Query } from '@nestjs/common';
 import { ApiOperation, ApiQuery, ApiTags } from '@nestjs/swagger';
 import { ResponseConfig } from 'src/utils/ResponseConfig';
 import { AccountService } from './account.service';
@@ -19,6 +19,7 @@ export class AccountController {
     })
     @Post("new")
     createAccount(@Body() account:Account) {
+        Logger.log(account,"create account")
         let res = new ResponseConfig<Account>();
         res.data = this.accountService.appendAccount(account);
         return res
@@ -33,7 +34,8 @@ export class AccountController {
     })
     @Delete("delete")
     removeAccount(@Query("name") name:string){
-        let res = new ResponseConfig<Account>()
+        Logger.log(`name:${name}`,"remove student")
+        let res = new ResponseConfig<Account>();
         return res;
     }
 
@@ -41,7 +43,8 @@ export class AccountController {
         description:"更新账号信息"
     })
     @Put(["update","put"])
-    updateAccount(@Body('account') account:Account){
+    updateAccount(@Body() account:Account){
+        Logger.log(account,"update student")
         let res = new ResponseConfig<Pick<Account,"username">>();
         // res.data = this.accountService.updateAccount(account);
         return res;

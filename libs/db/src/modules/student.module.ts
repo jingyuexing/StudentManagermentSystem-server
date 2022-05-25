@@ -6,7 +6,7 @@ import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
     name:"student"
 })
 export class Student{
-    
+
     @IsNumber({
         allowNaN:false,
         allowInfinity:false
@@ -28,7 +28,7 @@ export class Student{
         message:"此项必填"
     })
     name:string;
-    
+
     @ApiProperty({
         description:"年龄",
         example:20
@@ -38,7 +38,7 @@ export class Student{
         allowInfinity:false
     })
     @Min(0,{
-      message:"年龄太小了,不可能有这种年龄"  
+      message:"年龄太小了,不可能有这种年龄"
     })
     @Max(120,{
         message:"你是当代彭祖吗"
@@ -49,6 +49,9 @@ export class Student{
     })
     age:number;
 
+    @ApiProperty({
+        description:"性别",
+    })
     @Column({
         type:"enum",
         enum:["男","女"],

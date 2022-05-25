@@ -1,6 +1,6 @@
 import { Teacher } from '@libs/db/modules/teacher.module';
 import { Body, Controller, Delete, Get, Post, Put, Query } from '@nestjs/common';
-import { ApiOperation, ApiParam, ApiQuery, ApiTags } from '@nestjs/swagger';
+import { ApiOperation, ApiQuery, ApiTags } from '@nestjs/swagger';
 import { ResponseConfig } from 'src/utils/ResponseConfig';
 import { TeacherService } from './teacher.service';
 
@@ -39,12 +39,14 @@ export class TeacherController {
     createTeacher(@Body() teacher:Teacher) {
         this.teacher.addTeacher(teacher);
     }
-    
+
     @ApiOperation({
         description: "更新教师信息"
     })
     @Put("")
-    updateTeacher(@Body() teacher:Teacher) {}
+    updateTeacher(@Body() teacher:Teacher) {
+        return this.teacher.updateTeacher(teacher);
+    }
 
 
     @ApiOperation({

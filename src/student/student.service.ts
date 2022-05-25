@@ -19,7 +19,7 @@ export class StudentService {
         result.push(student);
         return result;
     }
-    removeStudent():Student[]{
+    removeStudent(studentId:number):Student[]{
         return [new Student()];
     }
 }

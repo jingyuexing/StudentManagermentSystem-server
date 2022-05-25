@@ -2,16 +2,20 @@ import { Logger } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { AppModule } from './app.module';
-
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+  app.enableCors({
+    methods:["options","put","get","delete","post","patch"],
+    origin:"*"
+  })
   app.use(function(req,res,next){
     next();
   });
+
   // Swagger
   const config = new DocumentBuilder()
-    .setTitle('学生管理系统API文档')
-    .setVersion('0.0.1')
+    .setTitle('student management server API documentation')
+    .setVersion('0.0.2')
     .setDescription("api文档用于前后端对接")
     .build();
   const docs = SwaggerModule.createDocument(app,config);

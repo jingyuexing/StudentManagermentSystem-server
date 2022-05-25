@@ -24,7 +24,7 @@ export class TeacherService {
 
     }
 
-    updateTeacher(){
+    updateTeacher(teacher:Teacher){
         return {};
 
     }
