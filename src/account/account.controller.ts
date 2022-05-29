@@ -46,7 +46,6 @@ export class AccountController {
     updateAccount(@Body() account:Account){
         Logger.log(account,"update student")
         let res = new ResponseConfig<Pick<Account,"username">>();
-        // res.data = this.accountService.updateAccount(account);
         return res;
     }
 }

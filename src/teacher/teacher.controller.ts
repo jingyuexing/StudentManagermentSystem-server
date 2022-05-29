@@ -29,7 +29,9 @@ export class TeacherController {
     })
     @Get("list")
     getTeacherList(limit:number) {
-        this.teacher.getTeachers(limit);
+        let res = new ResponseConfig<Teacher>();
+        res.data = this.teacher.getTeachers(limit);
+        return res;
     }
 
     @ApiOperation({
@@ -37,7 +39,12 @@ export class TeacherController {
     })
     @Post("")
     createTeacher(@Body() teacher:Teacher) {
-        this.teacher.addTeacher(teacher);
+        // this.teacher.addTeacher(teacher);
+        let res = new ResponseConfig<object>();
+        res.data = [this.teacher.addTeacher(teacher)]
+        res.statusCode = 200;
+        res.message = "OK";
+        return res;
     }
 
     @ApiOperation({
@@ -45,7 +52,12 @@ export class TeacherController {
     })
     @Put("")
     updateTeacher(@Body() teacher:Teacher) {
-        return this.teacher.updateTeacher(teacher);
+        // return this.teacher.updateTeacher(teacher);
+        let res = new ResponseConfig<object>();
+        res.data = [this.teacher.updateTeacher(teacher)]
+        res.statusCode = 200;
+        res.message = "OK";
+        return res;
     }
 
 
@@ -58,7 +70,12 @@ export class TeacherController {
     })
     @Get("search")
     searchByName(@Query("name") name: string) {
-        this.teacher.searchTeacher(name);
+        //
+        let res = new ResponseConfig<object>();
+        res.data = [this.teacher.searchTeacher(name)]
+        res.statusCode = 200;
+        res.message = "OK";
+        return res;
     }
 
     @ApiOperation({

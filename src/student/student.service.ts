@@ -7,7 +7,24 @@ export class StudentService {
         return name;
     }
     getStudents():Student[]{
-        let list:Student[] = [];
+        let list:Student[] = [
+        ];
+        for(let i =0;i<100;i++){
+            list.push(
+            {
+                "academy":"",
+                "age":20,
+                "classID":"3342",
+                "gender":0,
+                "grade":"",
+                "id":1,
+                "IDCard":"",
+                "name":"张三",
+                "phone":"11368725954",
+                "schoolID":20223638,
+            }
+            )
+        }
         return list;
     }
     getStudentById(schooldId:number):Student[]{

@@ -1,5 +1,8 @@
 ## Student Managerment
 
+![nestjs](https://img.shields.io/badge/-nestjs-f36?logo=nestjs&style=flat)
+![typescript](https://img.shields.io/badge/-typescript-f36?logo=typescript&style=flat)
+
 ## Description
 
 用于学生管理的后端项目

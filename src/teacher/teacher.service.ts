@@ -3,33 +3,36 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class TeacherService {
-    getTeacher(name: string){
-        // only one thing
-        // return data
-        //
-        return {};
+    getTeacher(name: string):Teacher[]{
+        let res = new Teacher();
+        return [res];
     }
 
-    getTeachers(limit: number){
-        return {};
+    getTeachers(limit: number):Teacher[]{
+        let data = new Teacher();
+        return [data];
     }
 
-    searchTeacher(name: string){
-        return {};
+    searchTeacher(name: string):Teacher[]{
+        let data = new Teacher();
+        return [data];
 
     }
 
     addTeacher(teacher:Teacher){
-        return {};
+        let data = new Teacher();
+        return [data];
 
     }
 
     updateTeacher(teacher:Teacher){
-        return {};
+        let data = new Teacher();
+        return [data];
 
     }
 
     removeTeacher(name: string , id: number = -1){
-        return {};
+        let data = new Teacher();
+        return [data];
     }
 }

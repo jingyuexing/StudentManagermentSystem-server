@@ -11,7 +11,6 @@ async function bootstrap() {
   app.use(function(req,res,next){
     next();
   });
-
   // Swagger
   const config = new DocumentBuilder()
     .setTitle('student management server API documentation')
