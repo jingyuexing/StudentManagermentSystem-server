@@ -1,7 +1,7 @@
 ## Student Managerment
 
 ![nestjs](https://img.shields.io/badge/-nestjs-f36?logo=nestjs&style=flat)
-![typescript](https://img.shields.io/badge/-typescript-2970c4?logo=typescript&style=flat)
+![typescript](https://img.shields.io/badge/-typescript-2a67ab?logo=typescript&style=flat)
 
 ## Description
 
